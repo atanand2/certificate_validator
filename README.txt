@@ -1,5 +1,5 @@
 Cisco Secure Endpoint Certificate Validator
-Authored by Rafa Castro (rafacast@cisco.com)
+Authored by Atul Anand (atanand2@cisco.com)
 
 Overview
 
@@ -11,23 +11,6 @@ Requirements
 
 How to Use:
 
-Running the script via Orbital
-- Open the Cisco Orbital console
-- Navigate to the 'Investigate' tab
-- Choose the Windows endpoints where you want to execute the script
-- Select the 'Script' option
-- Paste the contents of the "se_certificate_validator.py" script into the custom script text field
-- Click 'Run script'
-
-Running the script via command prompt
-- C:\Users\<user>\Downloads\se_certificate_validator> python se_certificate_validator.py
-
-
-Output
-
-The script generates a list of certificates, prioritizing the absent certificates at the start of the list. It then follows with the list of required certificates that are already installed. An example of the output is as follows. For instructions on how to install a missing certificate, refer to this link: https://youtu.be/jc_b6rQpDMc?si=Jriywsp2cQyov_r9
-
-[MISSING] F40042E2E5F7E8EF8189FED15519AECE42C3BFA2 with CN=Microsoft Identity Verification Root Certificate Authority 2020
-[OK] 3B1EFD3A66EA28B16697394703A72CA340A05BD5 with name CN=Microsoft Root Certificate Authority 2010
-...
-You can install the missing certificates using the instructions in the provided link: https://youtu.be/jc_b6rQpDMc?si=Jriywsp2cQyov_r9
+This GUI based tool presents two buttons
+Check certificate - this is used to check if the required certificates are present
+Update certificate - if one or more certificate is missing, this will automatically download the certificate and install it in the local machine
